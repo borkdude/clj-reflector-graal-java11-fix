@@ -1,4 +1,5 @@
 (defproject borkdude/clj-reflector-graal-java11-fix "0.0.1-graalvm-19.3.1-alpha.2"
+  :description "A fix for an issue with clojure.lang.Reflector in GraalVM native-image JDK11."
   :license {:name "Eclipse Public License 1.0"
             :url "http://opensource.org/licenses/eclipse-1.0.php"}
   :url "https://github.com/borkdude/clj-reflector-graal-java11-fix"
