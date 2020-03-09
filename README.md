@@ -32,7 +32,9 @@ $ native-image -jar target/foo-0.0.1-SNAPSHOT-standalone.jar
 
 ## The problem
 
-JDK11 is supported since GraalVM 19.3.0. The class `clojure.lang.Reflector` uses a `MethodHandle` to maintain compatible with java8 and java11 at the same time:
+JDK11 is supported since GraalVM 19.3.0. The class `clojure.lang.Reflector` uses
+a `MethodHandle` to maintain compatibility with java8 and java11 at the same
+time:
 
 ``` java
 static {
