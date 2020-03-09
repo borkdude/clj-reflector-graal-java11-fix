@@ -54,7 +54,8 @@ static {
 ```
 
 GraalVM does not support `MethodHandle`s that cannot be analyzed as a compile
-time constant and will complain when used on JDK11:
+time constant. It will complain when it analyzes `clojure.lang.Reflector` on
+JDK11:
 
 ``` java
 Exception in thread "main" com.oracle.svm.core.jdk.UnsupportedFeatureError: Invoke with MethodHandle argument could not be reduced to at most a single call or single field access. The method handle must be a compile time constant, e.g., be loaded from a `static final` field. Method that contains the method handle invocation: java.lang.invoke.Invokers$Holder.invoke_MT(Object, Object, Object, Object)
