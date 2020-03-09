@@ -19,8 +19,8 @@ Use the right GraalVM version modifier: `graalvm-19.3.1` or
 `graalvm-20.0.0`. The modifier must exactly match the version of GraalVM
 `native-image`.
 
-Do NOT distribute this library as part of libraries or uberjars that are
-supposed to be run with a JVM. Use it for compiling native binaries only.
+Do NOT distribute this library as part of libraries or applications that are run
+with a JVM. Use it for compiling to native binaries only.
 
 E.g. to produce an uberjar that is fed to `native-image` you can do:
 
