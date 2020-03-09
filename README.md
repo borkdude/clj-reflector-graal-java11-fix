@@ -16,7 +16,7 @@ available on the classpath for GraalVM `native-image`. E.g.:
 ```
 
 Do NOT distribute this library as part of libraries or uberjars that are
-supposed to be run with a JVM. Use it for final native compilation targets only.
+supposed to be run with a JVM. Use it for compiling native binaries only.
 
 E.g. to produce an uberjar that is fed to `native-image` you can do:
 
