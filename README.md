@@ -20,8 +20,8 @@ supposed to be run with a JVM. Use it for compiling native binaries only.
 
 E.g. to produce an uberjar that is fed to `native-image` you can do:
 
-``` clojure
-lein with-profiles +native-image do clean, uberjar
+``` shell
+$ lein with-profiles +native-image do clean, uberjar
 ```
 
 and then:
