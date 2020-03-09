@@ -6,7 +6,7 @@ import com.oracle.svm.core.jdk.JDK11OrLater;
 import java.lang.reflect.Method;
 import clojure.lang.Util;
 
-public final class ReflectorSubstitutions {
+public final class Clojure_lang_Reflector_Substitutions {
 }
 
 @TargetClass(className = "clojure.lang.Reflector")
