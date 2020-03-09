@@ -12,7 +12,7 @@ available on the classpath for GraalVM `native-image`. E.g.:
 
 ``` clojure
 (defproject foo "0.0.1-SNAPSHOT"
-  :profiles {:native-image {:dependencies [[borkdude/clj-reflector-graal-java11-fix "0.0.1-graalvm-19.3.1-alpha.1"]]}})
+  :profiles {:native-image {:dependencies [[borkdude/clj-reflector-graal-java11-fix "0.0.1-graalvm-19.3.1-alpha.2"]]}})
 ```
 
 Do NOT distribute this library as part of libraries or uberjars that are
