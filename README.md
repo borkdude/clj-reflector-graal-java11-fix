@@ -15,7 +15,7 @@ available on the classpath for GraalVM `native-image`. E.g.:
   :profiles {:native-image {:dependencies [[borkdude/clj-reflector-graal-java11-fix "0.0.1-graalvm-20.1.0"]]}})
 ```
 
-Use the right GraalVM version modifier: e.g. `graalvm-19.3.1`. The modifier must exactly match the version of GraalVM
+Use the right GraalVM version modifier: e.g. `graalvm-20.1.0`. The modifier must exactly match the version of GraalVM
 `native-image`.
 
 Do NOT distribute this library as part of libraries or applications that are run
