@@ -12,7 +12,7 @@ available on the classpath for GraalVM `native-image`.
 
 Important:
 
-- Use the right GraalVM version modifier: e.g. `graalvm-20.1.0`. The modifier must exactly match the version of GraalVM
+- Use the right GraalVM version modifier: e.g. `graalvm-20.2.0`. The modifier must exactly match the version of GraalVM
 `native-image` you are using.
 - Do NOT distribute this library as part of libraries or applications that are run
 with a JVM. Use it for compiling to native binaries only.
@@ -22,7 +22,7 @@ with a JVM. Use it for compiling to native binaries only.
 Relevant config for `project.cljc`:
 ``` clojure
 (defproject foo "0.0.1-SNAPSHOT"
-  :profiles {:native-image {:dependencies [[borkdude/clj-reflector-graal-java11-fix "0.0.1-graalvm-20.1.0"]]}})
+  :profiles {:native-image {:dependencies [[borkdude/clj-reflector-graal-java11-fix "0.0.1-graalvm-20.2.0"]]}})
 ```
 
 To produce an uberjar that is fed to `native-image` you can:
@@ -43,7 +43,7 @@ Relevant config for `deps.edn`:
 ``` clojure
 {:aliases
  {:native-image {:extra-deps {borkdude/clj-reflector-graal-java11-fix
-                              {:mvn/version "0.0.1-graalvm-20.1.0"
+                              {:mvn/version "0.0.1-graalvm-20.2.0"
                                :exclusions [org.graalvm.nativeimage/svm]}}}}}
 ```
 
@@ -51,7 +51,7 @@ Notice the exclusion? This project depends on native dep `org.graalvm.nativeimag
 While technically correct, tools deps does not support native deps and fails for this native dep.
 Since the native dep is provided by the Graal installation anyway, it can be safely excluded for tools deps.
 
-Your compile script would get the classspath for `native-image` via: 
+Your compile script would get the classspath for `native-image` via:
 
 ```shell
 clojure -A:native-image -Spath
