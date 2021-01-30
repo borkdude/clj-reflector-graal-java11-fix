@@ -1,5 +1,9 @@
 # clj-reflector-graal-java11-fix
 
+***
+:tada: **Great news!** Starting with GraalVM v21, this fix should no longer be needed.
+***
+
 [![Clojars Project](https://img.shields.io/clojars/v/borkdude/clj-reflector-graal-java11-fix.svg)](https://clojars.org/borkdude/clj-reflector-graal-java11-fix)
 
 This library offers a fix for an issue with `clojure.lang.Reflector` when used
