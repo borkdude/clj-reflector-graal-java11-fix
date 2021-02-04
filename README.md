@@ -4,6 +4,15 @@
 :tada: **Great news!** Starting with GraalVM v21, this fix should no longer be needed.
 ***
 
+Instead, you will probably need to add this to your [reflection](https://github.com/oracle/graal/blob/master/substratevm/Reflection.md) config:
+
+``` json
+[{"name": "java.lang.reflect.AccessibleObject",
+  "methods" : [{"name":"canAccess"}]},
+  ...
+]
+```
+
 [![Clojars Project](https://img.shields.io/clojars/v/borkdude/clj-reflector-graal-java11-fix.svg)](https://clojars.org/borkdude/clj-reflector-graal-java11-fix)
 
 This library offers a fix for an issue with `clojure.lang.Reflector` when used
